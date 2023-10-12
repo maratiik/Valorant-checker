@@ -21,7 +21,7 @@ while(True):
     # Show only EU cases
     valorant_table = valorant_table[valorant_table['Region'].str.contains('EU')]
     if valorant_table.empty:
-        print('No EU cases for now')
+        print('\n' * 30, 'No EU cases for now')
     else:
         print('\n' * 30, valorant_table)
 
