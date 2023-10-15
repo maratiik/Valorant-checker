@@ -16,8 +16,7 @@ while(True):
 
     # Making every value in 'Region' uppercase to filter only EU cases (later in code)
     for row in range(len(valorant_table['Region'])):
-        if (type(valorant_table['Region'][row]) is str):
-            valorant_table['Region'][row] = valorant_table['Region'][row].upper()
+        valorant_table['Region'][row] = valorant_table['Region'][row].upper()
 
     # Filtering only EU cases
     valorant_table = valorant_table[valorant_table['Region'].str.contains('EU')]
