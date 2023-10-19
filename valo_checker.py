@@ -4,7 +4,7 @@ import time
 old_valorant_table = pd.DataFrame()
 
 while(True):
-    tables = pd.read_html('https://docs.google.com/spreadsheets/d/1lmuMYYLpJENk6dho7-l0jmPsHoVVl2c9jpaQzRW0SiQ/htmlview#', header = 1, keep_default_na=False)
+    tables = pd.read_html('<YOUR LINK>', header = 1, keep_default_na=False)
     # Finding only Valorant table
     for table in tables:
         if table.columns.values[1] == 'Valorant':
